@@ -8,25 +8,14 @@
   </head>
 
   <body>
-      <header class="navbar navbar-fixed-top navbar-default">
+      
+      <%= render 'layouts/navigation' %>
+
       <div class="container">
-          <%=  link_to "My Recipe", "", class:"btn btn-lg btn-success", id:"logo" %>
-          <div class="nav_item">
-          <%= link_to "link 1","", class:"btn btn-default btn-warning" %>
-          </div>
-          <div class="nav_item">
-          <%= link_to "link 2","", class:"btn btn-default btn-warning" %>
-          </div>
-          <div class="nav_item">
-          <%= link_to "link 3","", class:"btn btn-default btn-warning" %>
-          </div>
-          </div>
-      </header>
-      <div class="container">
-    <%= yield %>
+          <%= yield %>
+          <%= render 'layouts/footer' %>
       </div>
-      <div class="footer">
-      &copy; Brewdo 2017
-      </div>
+      
+      
   </body>
 </html>
