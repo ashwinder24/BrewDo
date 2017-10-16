@@ -13,8 +13,3 @@
  *= require_tree .
  *= require_self
  */
-.centre {
-    background-color: black
-    display: flex;
-    flex-direction: column;
-}
